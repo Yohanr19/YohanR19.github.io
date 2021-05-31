@@ -1,0 +1,114 @@
+:root {
+  --softmangenta: rgb(232, 114, 236);
+  --darkmagenta: rgb(164, 79, 167);
+  --saturateddarkblue: rgb(102, 55, 207);
+  --darkborderviolet: rgb(51, 11, 114);
+  --yellow: rgb(204, 231, 50);
+  --darkgreytext: rgb(46, 46, 51);
+  --brightyellow: rgb(221, 253, 37);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  background: linear-gradient(
+    to bottom,
+    var(--softmangenta),
+    var(--saturateddarkblue)
+  );
+  color: var(--darkgreytext);
+}
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--darkmagenta);
+  height: 70px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.wrapper {
+  width: 90%;
+  background-color: var(--yellow);
+  display: grid;
+  grid-auto-rows: auto;
+  max-width: 600px;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+.box {
+  border: 2px solid maroon;
+  border-radius: 18px;
+}
+.header {
+  text-align: center;
+  background-color: var(--brightyellow);
+}
+.info {
+  margin-top: 25px;
+  margin-bottom: 60px;
+  background-color: var(--brightyellow);
+}
+.proyect {
+  background-color: wheat;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.proyect-screenshot {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.proyect-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-link {
+  height: 100%;
+  width: 52px;
+  margin-right: 7px;
+}
+.btn-wrap {
+  display: grid;
+  justify-items: right;
+}
+
+#footer {
+  background-color: var(--darkborderviolet);
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+h4 {
+  color: white;
+}
+p {
+  margin-left: 9px;
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 1000px) {
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .nav-link {
+    font-size: 2rem;
+  }
+}
