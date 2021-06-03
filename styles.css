@@ -3,9 +3,9 @@
   --darkmagenta: rgb(164, 79, 167);
   --saturateddarkblue: rgb(102, 55, 207);
   --darkborderviolet: rgb(51, 11, 114);
-  --yellow: rgb(204, 231, 50);
-  --darkgreytext: rgb(46, 46, 51);
-  --brightyellow: rgb(221, 253, 37);
+  --Cyan: hsl(179, 62%, 43%);
+  --darkgreytext: rgb(0, 46, 51);
+  --DarkCyan: hsl(179, 62%, 64%);
 }
 * {
   padding: 0;
@@ -40,10 +40,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+
 }
 .wrapper {
   width: 90%;
-  background-color: var(--yellow);
+  background-color: var(--Cyan);
   display: grid;
   grid-auto-rows: auto;
   max-width: 600px;
@@ -56,12 +57,12 @@ body {
 }
 .header {
   text-align: center;
-  background-color: var(--brightyellow);
+  background-color: var(--DarkCyan);
 }
 .info {
   margin-top: 25px;
   margin-bottom: 60px;
-  background-color: var(--brightyellow);
+  background-color: var(--DarkCyan);
 }
 .proyect {
   background-color: wheat;
@@ -102,6 +103,9 @@ p {
   margin-left: 9px;
   margin-top: 5px;
 }
+.proyect-def{
+  text-indent: 2rem;
+}
 
 @media screen and (min-width: 1000px) {
   #footer {
@@ -111,4 +115,10 @@ p {
   .nav-link {
     font-size: 2rem;
   }
-}
+  .wrapper {max-width: 850px;}
+  p 
+  {
+    font-size: 1.3rem;
+    margin-left: 15px;
+  }
+} 
