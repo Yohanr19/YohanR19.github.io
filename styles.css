@@ -31,16 +31,19 @@ body {
   width: 100%;
   background-color: var(--darkmagenta);
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-link {
   text-decoration: none;
   color: white;
+  justify-self: center;
 }
 .navbar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-
+  width: 80%;
 }
 .wrapper {
   width: 90%;
@@ -58,6 +61,9 @@ body {
 .header {
   text-align: center;
   background-color: var(--DarkCyan);
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+  color: var(--darkgreytext);
 }
 .info {
   margin-top: 25px;
@@ -66,8 +72,7 @@ body {
 }
 .proyect {
   background-color: wheat;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 2rem 0.5rem;
 }
 .proyect-screenshot {
   width: 100%;
@@ -80,11 +85,13 @@ body {
   justify-content: space-between;
   width: 100%;
 }
-.btn-link {
+ .btn-link {
   height: 100%;
-  width: 52px;
+  width: 4rem;
   margin-right: 7px;
-}
+  background-color: yellowgreen;
+  border-radius: 30%;
+} 
 .btn-wrap {
   display: grid;
   justify-items: right;
@@ -96,6 +103,18 @@ body {
   width: 100%;
   color: white;
 }
+#footer h3{
+  padding-left: 1rem;
+}
+.fas, .fab{
+  margin-right: 2px;
+  align-self: center;
+}
+.contact{
+  justify-self: end;
+  display: flex;
+  padding-left: 1rem;
+}
 h4 {
   color: white;
 }
@@ -104,13 +123,13 @@ p {
   margin-top: 5px;
 }
 .proyect-def{
-  text-indent: 2rem;
+  margin-left: 2rem;
 }
 
 @media screen and (min-width: 1000px) {
   #footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   }
   .nav-link {
     font-size: 2rem;
@@ -121,4 +140,5 @@ p {
     font-size: 1.3rem;
     margin-left: 15px;
   }
+  
 } 
